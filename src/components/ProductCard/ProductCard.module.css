@@ -1,0 +1,153 @@
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+  
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 12px;
+  }
+  
+  .image {
+    max-height: 180px;
+    object-fit: contain;
+  }
+  
+  .priceRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  
+  .oldPrice {
+    color: #9ca3af;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .oldPrice::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: red;
+    transform: translateY(-50%);
+  }
+  
+  .price {
+    color: #2a6df5;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .discountWrapper {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .discountIcon {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .discount {
+    background: #ff4d4f;
+    color: white;
+    font-size: 12px;
+    padding: 0 3px;
+    line-height: 1;
+    border-radius: 1px;
+  }
+  
+  .name {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+    width: 100%;
+    margin: 6px 0 10px 0;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  .stars {
+    color: #2a6df5;
+  }
+  
+  .reviews_count {
+    color: #666;
+  }
+  
+  .statusRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 13px;
+  }
+  
+  .in_stock {
+    color: #1a9c4b;
+    font-weight: 500;
+  }
+
+  .non_in_stock {
+    color:rgba(216, 32, 8, 0.881);
+    font-weight: 500;
+  }
+
+  .category {
+    color:rgba(172, 166, 166, 0.87);
+    font-weight: 500;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+  }
+  
+  .select {
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    background: white;
+    outline: none;
+  }
+  
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: #9cdbf8;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: #d6e7ff;
+  }

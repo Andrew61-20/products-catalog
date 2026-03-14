@@ -1,0 +1,81 @@
+.headerLogo {
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    display: flex;
+    margin-top: 20px;
+    height: 40px;
+  }
+
+  .searchRow {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .searchWrapper {
+    display: flex;
+    align-items: center;
+  
+    background: #f3f5f7;
+    border-radius: 8px;
+  
+    padding: 8px 12px;
+    width: 260px;
+  }
+  
+  .searchIcon {
+    width: 16px;
+    margin-right: 8px;
+  }
+  
+  .search {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+  }
+
+  .sortRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .count {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .sort {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .arrows {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    margin-right: 6px;
+  }
+  
+  .arrowUp,
+  .arrowDown {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .arrowUp {
+    color: black;
+  }
+  
+  .arrowDown {
+    color: #43A0FD;
+  }
+  
+  .sortText {
+    font-size: 14px;
+  }
