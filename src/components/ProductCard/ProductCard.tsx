@@ -64,12 +64,13 @@ export const ProductCard: FC<Props> = ({ product }) => {
       </div>
 
       <div className={styles.actions}>
-        <select className={styles.select} onChange={handleVolumeChange}>
-          {product.volumes.map((el, i) =>
-            <option key={i}>{el.label}</option>
-          )}
-        </select>
-
+        {product.volumes?.length > 1 &&
+          <select className={styles.select} onChange={handleVolumeChange}>
+            {product.volumes.map((el, i) =>
+              <option key={i}>{el.label}</option>
+            )}
+          </select>
+        }
         <button className={styles.button}>
             <img src="/cart.svg" className={styles.cartIcon} />
             До кошика
