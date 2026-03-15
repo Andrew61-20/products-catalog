@@ -65,9 +65,12 @@ export const ProductCard: FC<Props> = ({ product }) => {
 
       <div className={styles.actions}>
         {product.volumes?.length > 1 &&
-          <select className={styles.select} onChange={handleVolumeChange}>
-            {product.volumes.map((el, i) =>
-              <option key={i}>{el.label}</option>
+          <select
+           className={styles.select}
+           defaultValue={product.selected_volume_id}
+           onChange={handleVolumeChange}>
+            {product.volumes.map(el =>
+              <option key={el.id} value={el.id}>{el.label}</option>
             )}
           </select>
         }

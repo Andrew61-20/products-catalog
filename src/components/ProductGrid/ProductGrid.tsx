@@ -7,6 +7,7 @@ interface Props {
 }
 
 export default function ProductGrid({ products }: Props) {
+  console.log(products);
   return (
     <div className={styles.grid}>
       {products.data.products.map((p) => (
